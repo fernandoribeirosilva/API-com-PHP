@@ -1,0 +1,23 @@
+DEVSNOTES: (Sistema de anotações Simples)
+
+O que o projeto precisa fazer?
+- Listar as anotações *
+- Pegar informações de UMA anotação *
+- Inserir uma anotação nova *
+- Atualizar uma anotação *
+- Deletar uma anotação *
+
+Qual a estrutura de dados?
+- local para armazenar as anotação
+-- id
+-- title
+-- body
+
+Quais os endPoints?
+- modelo: (METODO) /url (PARÂMETROS)
+
+- (GET) /api/notes - /api/getAll.php *
+- (GET) /api/note/123 <- parametro - /api/get.php?id=123 *
+- (POST) /api/note  - /api/insert.php (title, body) *
+- (PUT) /api/note/123 - /api/update.php (id, title, body) *
+- (DELETE) /api/note/123 - /api/delete.php (id) *
